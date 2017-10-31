@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Kostya Dmitrijev](https://up.htmlacademy.ru/htmlcss/19/user/152920).
-* Наставник: `Никита Рогатнев`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
