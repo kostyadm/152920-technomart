@@ -7,17 +7,20 @@
   <body>
     <header class="main-header">
       <div class="upper-header">
-        <a class="logo main-header-logo" href="#"><img src="#" alt="техномарт" /></a>
-        <input type="search" class="search"/>
+        <div class="logo main-header-logo">
+          <a class="logo-link" href="#"><img src="#" alt="техномарт" /></a>
+        </div>
+        <form>
+          <input type="search" class="search"/>
+        </form>
         <a class="bookmarks" href="#">Закладки:0</a>
         <a class="cart" href="#">Корзина:10</a>
         <a class="order" href="#">Оформить заказ</a>
       </div>
       <div class="bottom-header">
-        <span class="description">Интернет-магазин строительных материалов и инструментов для ремонта</span>
-          <p class="header-contacts">+7 (812) 555-05-55<br />
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <span class="user-name">Равшан Дшамшутович</span>
+        <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p class="header-contacts">+7 (812) 555-05-55 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a href="#" class="user-name">Равшан Дшамшутович</a>
           <img class="log-out" src="#" alt="log-out" />
         <ul class="user-menu">
           <li><a class="visually-hidden user-btn login" href="#">Войти</a></li>
@@ -36,18 +39,18 @@
             <li><a class="menu-item" href="#">Контакт</a></li>
           </ul>
         </nav>
-        <nav class="cataloge-nav">
-          <ul class="cataloge-list">
-            <li><a class="cataloge-item" href="#"><img src="#" alt="home" /></a></li>
-            <li><a class="cataloge-item" href="#">каталог</a></li>
-            <li><a class="cataloge-item" href="#">перфораторы</a></li>
+        <nav class="catalog-nav">
+          <ul class="catalog-list">
+            <li><a class="catalog-item" href="#"><img src="#" alt="home" /></a></li>
+            <li><a class="catalog-item" href="#">каталог</a></li>
+            <li><a class="catalog-item" href="#">перфораторы</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Каталог магазина Техномарт</h1>
-      <section class="cataloge-panel">
+      <section class="catalog-panel">
         <h2 class="section-heading">перфораторы</h2>
         <section class="filter aside">
           <h3 class="sub-section-heading">фильтр:</h3>
@@ -78,13 +81,13 @@
           <span class="sort up-sort"><img src="#" alt="up" /></span>
           <span class="sort down-sort"><img src="#" alt="down" /></span>
         </section>
-        <section class="cataloge-results">
+        <section class="catalog-results">
           <h3 class="visually-hidden">Отображаемые товары</h3>
           <ul>
             <li>
               <article class="item-card">
                 <img src="#" alt="item-pic"/>
-                <h3 class="item-name">Перфоратор BOSH BFG 3000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 3000</a></h1>
                 <span class="item-old-price">22500 Р.</span>
                 <span class="item-new-price">15500 Р.</span>
               </article>
@@ -92,7 +95,7 @@
             <li>
               <article class="item-card">
                 <img src="#" alt="item-pic"/>
-                <h3 class="item-name">Перфоратор BOSH BFG 6000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 6000</a></h1>
                 <span class="item-old-price">30500 Р.</span>
                 <span class="item-new-price">25500 Р.</span>
               </article>
@@ -105,7 +108,7 @@
                   <span class="btn buy-btn"><img src="#" alt="cart" />купить</span> <!-- тут, на сколько я понимаю, будет form кнопка и onclick=addToCart() -->
                   <span class="btn bookmark-btn"><img src="#" alt="bookmarks" />в закладки</span> <!-- тут, на сколько я понимаю, будет form кнопка и onclick=addToCart() -->
                 </section>
-                <h3 class="item-name">Перфоратор BOSH BFG 2000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 2000</a></h1>
                 <span class="item-old-price visually-hidden">NaN</span>
                 <span class="item-new-price">12500 Р.</span>
               </article>
@@ -113,7 +116,7 @@
             <li>
               <article class="item-card">
                 <img src="#" alt="item-pic"/>
-                <h3 class="item-name">Перфоратор BOSH BFG 3000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 3000</a></h1>
                 <span class="item-old-price">22500 Р.</span>
                 <span class="item-new-price">15500 Р.</span>
               </article>
@@ -121,7 +124,7 @@
             <li>
               <article class="item-card new-item">
                 <img src="#" alt="item-pic"/>
-                <h3 class="item-name">Перфоратор BOSH BFG 6000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 6000</a></h1>
                 <span class="item-old-price">30500 Р.</span>
                 <span class="item-new-price">25500 Р.</span>
               </article>
@@ -129,7 +132,7 @@
             <li>
               <article class="item-card">
                 <img src="#" alt="item-pic"/>
-                <h3 class="item-name">Перфоратор BOSH BFG 2000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 2000</a></h1>
                 <span class="item-old-price visually-hidden">NaN</span>
                 <span class="item-new-price">12500 Р.</span>
               </article>
@@ -137,7 +140,7 @@
             <li>
               <article class="item-card new-item">
                 <img src="#" alt="item-pic"/>
-                <h3 class="item-name">Перфоратор BOSH BFG 3000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 3000</a></h1>
                 <span class="item-old-price">22500 Р.</span>
                 <span class="item-new-price">15500 Р.</span>
               </article>
@@ -145,7 +148,7 @@
             <li>
               <article class="item-card">
                 <img src="#" alt="item-pic"/>
-                <h3 class="item-name">Перфоратор BOSH BFG 6000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 6000</a></h1>
                 <span class="item-old-price">30500 Р.</span>
                 <span class="item-new-price">25500 Р.</span>
               </article>
@@ -153,24 +156,27 @@
             <li>
               <article class="item-card">
                 <img src="#" alt="item-pic"/>
-                <h3 class="item-name">Перфоратор BOSH BFG 2000</h3>
+                <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 2000</a></h1>
                 <span class="item-old-price visually-hidden">NaN</span>
                 <span class="item-new-price">12500 Р.</span>
               </article>
             </li>
           </ul>
         </section>
-        <section class="page-slaider">
+        <section class="pagination">
           <h3 class="visually-hidden">переключатель страниц</h3>
-          <a class="page active" href="">1</a>
-          <a class="page" href="">2</a>
-          <a class="page" href="">3</a>
-          <a class="page naxt" href="">следущая</a>
+          <ul>
+          <li><a class="page previous visually-hidden" href="#">предыдущая</a>
+          <li><a class="page active" href="#">1</a></li>
+          <li><a class="page" href="#">2</a></li>
+          <li><a class="page" href="#">3</a></li>
+          <li><a class="page next" href="#">следущая</a>  </li>
+          </ul>
         </section>
       </section>
-      <section class="cataloge-description">
+      <section class="catalog-description">
         <h2 class="section-heading">пара слов о перфораторах</h2>
-        <p class="cataloge-category-description">
+        <p class="catalog-category-description">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверсрий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут цыполнять функции дрели, шуруноверта и орбойного молорка. В ассортиментном ряду есть выбоп "трехжимников":в одном устройстве будут совмещены отбойный молотолк и ударная дрель.
         </p>
       </section>
@@ -178,7 +184,9 @@
     </main>
     <footer>
       <div class="upper-footer">
-        <a class="logo main-footer-logo"><img src="#" alt="техномарт" ></a>
+        <div class="logo main-footer-logo">
+          <a class="logo-link" href="#"><img src="#" alt="техномарт" /></a>
+        </div>
         <nav class="footer-upper-nav">
           <nav class="footer-upper-nav">
             <ul>
