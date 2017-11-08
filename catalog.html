@@ -4,33 +4,53 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
   </head>
-  <body>
+  <body style="background:grey;">
     <header class="main-header">
       <div class="upper-header">
         <div class="logo main-header-logo">
           <a class="logo-link" href="#"><img src="#" alt="техномарт" /></a>
         </div>
         <form>
+          <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           <input type="search" class="search"/>
         </form>
-        <a class="bookmarks" href="#">Закладки:0</a>
-        <a class="cart" href="#">Корзина:10</a>
+        <a class="bookmarks" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+        Закладки:0
+      </a>
+      <a class="cart" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+        Корзина:0
+      </a>
         <a class="order" href="#">Оформить заказ</a>
       </div>
       <div class="bottom-header">
         <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <p class="header-contacts">+7 (812) 555-05-55 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="#" class="user-name">Равшан Дшамшутович</a>
-          <img class="log-out" src="#" alt="log-out" />
-        <ul class="user-menu">
-          <li><a class="visually-hidden user-btn login" href="#">Войти</a></li>
+          <ul class="user-menu">
+            <li>
+              <a href="#" class="user-name">Равшан Дшамшутович</a>
+              <a class="visually-hidden user-btn log-out" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+              </a>
+            </li>
+          <li>
+            <a class="visually-hidden user-btn login" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+              Войти
+            </a>
+          </li>
           <li><a class="visually-hidden user-btn register" href="#">Регистрация</a></li>
           <li><a class="user-orders" href="#">Мои заказы</a></li>
+          <li>
+            <div class="round-divider">
+            </div>
+          </li>
           <li><a class="user-desk" href="#">Личный кабинет</a></li>
         </ul>
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a class="menu-item">Главная</a></li>
+            <li><a class="menu-item" href="#">Главная</a></li>
             <li><a class="menu-item" href="#">Компания</a></li>
             <li><a class="menu-item" href="#">Каталог</a></li>
             <li><a class="menu-item" href="#">Новости</a></li>
@@ -41,9 +61,29 @@
         </nav>
         <nav class="catalog-nav">
           <ul class="catalog-list">
-            <li><a class="catalog-item" href="#"><img src="#" alt="home" /></a></li>
-            <li><a class="catalog-item" href="#">каталог</a></li>
-            <li><a class="catalog-item" href="#">перфораторы</a></li>
+            <li>
+              <a class="catalog-item" href="#">
+                <svg class="home-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg>
+              </a>
+            </li>
+            <li>
+              <a class="catalog-item" href="#">
+                <svg class="right-small" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+                каталог
+              </a>
+            </li>
+            <li>
+              <a class="catalog-item" href="#">
+                <svg class="right-small" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+                инструмент
+              </a>
+            </li>
+            <li>
+              <a class="catalog-item" href="#">
+                <svg class="right-small" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+                перфораторы
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -86,7 +126,7 @@
           <ul>
             <li>
               <article class="item-card">
-                <img src="#" alt="item-pic"/>
+                <img src="img/BFG-3000.jpg" alt="item-pic"/>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 3000</a></h1>
                 <span class="item-old-price">22500 Р.</span>
                 <span class="item-new-price">15500 Р.</span>
@@ -94,7 +134,7 @@
             </li>
             <li>
               <article class="item-card">
-                <img src="#" alt="item-pic"/>
+                <img src="img/BFG-6000.jpg" alt="item-pic"/>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 6000</a></h1>
                 <span class="item-old-price">30500 Р.</span>
                 <span class="item-new-price">25500 Р.</span>
@@ -105,7 +145,10 @@
                 <img class="visually-hidden visible-on-hover" src="#" alt="item-pic"/>
                 <section class="hover-status">
                   <h3 class="visually-hidden">Действия с товаром</h3>
-                  <span class="btn buy-btn"><img src="#" alt="cart" />купить</span> <!-- тут, на сколько я понимаю, будет form кнопка и onclick=addToCart() -->
+                  <span class="btn buy-btn">
+                    <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                    купить
+                  </span> <!-- тут, на сколько я понимаю, будет form кнопка и onclick=addToCart() -->
                   <span class="btn bookmark-btn"><img src="#" alt="bookmarks" />в закладки</span> <!-- тут, на сколько я понимаю, будет form кнопка и onclick=addToCart() -->
                 </section>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 2000</a></h1>
@@ -115,7 +158,7 @@
             </li>
             <li>
               <article class="item-card">
-                <img src="#" alt="item-pic"/>
+                <img src="img/BFG-3000.jpg" alt="item-pic"/>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 3000</a></h1>
                 <span class="item-old-price">22500 Р.</span>
                 <span class="item-new-price">15500 Р.</span>
@@ -123,7 +166,7 @@
             </li>
             <li>
               <article class="item-card new-item">
-                <img src="#" alt="item-pic"/>
+                <img src="img/BFG-6000.jpg" alt="item-pic"/>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 6000</a></h1>
                 <span class="item-old-price">30500 Р.</span>
                 <span class="item-new-price">25500 Р.</span>
@@ -131,7 +174,7 @@
             </li>
             <li>
               <article class="item-card">
-                <img src="#" alt="item-pic"/>
+                <img src="img/BFG-2000.jpg" alt="item-pic"/>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 2000</a></h1>
                 <span class="item-old-price visually-hidden">NaN</span>
                 <span class="item-new-price">12500 Р.</span>
@@ -139,7 +182,7 @@
             </li>
             <li>
               <article class="item-card new-item">
-                <img src="#" alt="item-pic"/>
+                <img src="img/BFG-3000.jpg" alt="item-pic"/>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 3000</a></h1>
                 <span class="item-old-price">22500 Р.</span>
                 <span class="item-new-price">15500 Р.</span>
@@ -147,7 +190,7 @@
             </li>
             <li>
               <article class="item-card">
-                <img src="#" alt="item-pic"/>
+                <img src="img/BFG-6000.jpg" alt="item-pic"/>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 6000</a></h1>
                 <span class="item-old-price">30500 Р.</span>
                 <span class="item-new-price">25500 Р.</span>
@@ -155,7 +198,7 @@
             </li>
             <li>
               <article class="item-card">
-                <img src="#" alt="item-pic"/>
+                <img src="img/BFG-2000.jpg" alt="item-pic"/>
                 <h1 class="item-name"> <a href="#" class="item-link">Перфоратор BOSH BFG 2000</a></h1>
                 <span class="item-old-price visually-hidden">NaN</span>
                 <span class="item-new-price">12500 Р.</span>
@@ -217,9 +260,9 @@
           Все права защищены
         </p>
         <div class="social-btns">
-          <a class="social vk"><img src="#" alt="vk" /></a>
-          <a class="social fb"><img src="#" alt="fb" /></a>
-          <a class="social insta"><img src="#" alt="insta" /></a>
+          <a class="social vk"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg></a>
+          <a class="social fb"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a>
+          <a class="social insta"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg></a>
         </div>
         <p class="feedback">Обратная связь:<br />
         <span class="yellow">mail@htmlacademy.ru</span></p>
