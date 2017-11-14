@@ -26,7 +26,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
           <span class="cart-counter">Корзина:0</span>
         </a>
-        <button class="order-btn" type="button" href="#">Оформить заказ</button>
+        <button class="order-btn" type="button">Оформить заказ</button>
 
       </div>
 
@@ -38,13 +38,38 @@
             <span class="telephone-number-upper" aria-label="Телефонный номер">+7 (812) 555-05-55</span>
           </span>
           <span class="adress-upper" aria-label="Адрес офиса">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
-        <ul class="user-menu">
-          <li>
-            <a class="user-btn login" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
-              Войти
-            </a>
-          </li>
+
+          <ul class="user-menu">
+            <li>
+              <div class="visually-hidden user-info">
+                  <a href="#" class="user-data">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+                    <span class="user-name">Равшан Дшамшутович</span>
+                  </a>
+                  <a class="user-btn log-out" href="#" aria-label="Выжод из системы">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+                  </a>
+              </div>
+            </li>
+            <li>
+              <a class="visually-hidden user-orders" href="#">Мои заказы</a></li>
+            <li>
+              <div class="visually-hidden round-divider">
+              </div>
+            </li>
+            <li>
+              <a class="visually-hidden user-desk" href="#">
+                Личный кабинет
+              </a>
+            </li>
+            <li>
+              <div class="user-info user-log-in">
+                <a class="user-btn login" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                Войти
+                </a>
+                </div>
+            </li>
           <li>
             <a class="user-btn register" href="#">
               Регистрация
@@ -154,7 +179,7 @@
             <article class="item-card">
               <div class="item-image-area">
               <img class="item-image" src="img/BFG-9000.jpg" alt="Дрель "/>
-              <div class"item-purchase">
+              <div class="item-purchase">
                 <button type="button" name="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                   купить
@@ -169,9 +194,9 @@
           </li>
           <li class="item">
             <article class="item-card">
-              <div class"item-purchase">
+              <div class="item-purchase">
               <img src="img/BFG-3000.jpg" alt="item-pic"/>
-              <div class"item-purchase">
+              <div class="item-purchase">
                 <button type="button" name="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                   купить
@@ -186,9 +211,9 @@
           </li>
           <li class="item">
             <article class="item-card">
-              <div class"item-purchase">
+              <div class="item-purchase">
               <img src="img/BFG-6000.jpg" alt="item-pic"/>
-              <div class"item-purchase">
+              <div class="item-purchase">
                 <button type="button" name="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                   купить
@@ -203,9 +228,9 @@
           </li>
           <li class="item">
             <article class="item-card new-item">
-              <div class"item-purchase">
+              <div class="item-purchase">
               <img src="img/BFG-2000.jpg" alt="item-pic"/>
-              <div class"item-purchase">
+              <div class="item-purchase">
                 <button type="button" name="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                   купить
@@ -323,7 +348,7 @@
           </nav>
         </nav>
         <p class="header-contacts">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8>
+          <span class="adress-bottom" aria-label="Адрес офиса">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           <span class="telephone-number-bottom">7 (812) 555-05-55</span>
         </p>
         <nav class="footer-bottom-nav">
@@ -367,7 +392,7 @@
       </p>
       <p >
         <label class="letter-text" for="letter-text"></label>
-          <textarea name="letter-text"id="letter-text" class="letter-text" placeholder="В свободной форме"></textarea>
+          <textarea name="letter-text" id="letter-text" class="letter-text" placeholder="В свободной форме"></textarea>
       </p>
         <div class="modal-bottom-line">
           <button class="button" type="submit">Отправить</button>
